@@ -18,7 +18,11 @@ public class Truck extends Car implements Competitive{
 
     @Override
     public void printType() {
-        System.out.println(loadCapacity);
+        if(loadCapacity != null){
+            System.out.println(loadCapacity);
+        } else{
+            System.out.println("Недостаточно информации");
+        }
     }
 
     @Override

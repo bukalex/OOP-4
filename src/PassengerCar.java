@@ -18,7 +18,11 @@ public class PassengerCar extends Car implements Competitive{
 
     @Override
     public void printType() {
-        System.out.println(bodyType);
+        if(bodyType != null){
+            System.out.println(bodyType);
+        } else{
+            System.out.println("Недостаточно информации");
+        }
     }
 
     @Override

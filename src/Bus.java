@@ -18,7 +18,11 @@ public class Bus extends Car implements Competitive{
 
     @Override
     public void printType() {
-        System.out.println(passengerCapacity);
+        if(passengerCapacity != null){
+            System.out.println(passengerCapacity);
+        } else{
+            System.out.println("Недостаточно информации");
+        }
     }
 
     @Override
