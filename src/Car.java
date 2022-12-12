@@ -11,13 +11,12 @@ public abstract class Car{
 
     public abstract void startMovement();
     public abstract void finishMovement();
+    public abstract void printType();
 
     @Override
     public String toString() {
-        return "Car{" +
-                "brend='" + brend + '\'' +
-                ", model='" + model + '\'' +
-                ", engineVolume=" + engineVolume +
-                '}';
+        return "brend: '" + brend + "\n" +
+                "model: '" + model + "\n" +
+                "engine volume: " + engineVolume;
     }
 }
